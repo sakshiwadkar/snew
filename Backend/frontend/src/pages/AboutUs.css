@@ -1,0 +1,101 @@
+/* Container styling */
+.container-fluid {
+  padding: 8px;
+  width: 100%;
+}
+
+.container-fluid img {
+  width: 100%;
+  height: auto;
+}
+
+/* Slider container styling */
+.slider {
+  width: 80%; /* Adjust width as desired */
+  max-width: 600px; /* Set a maximum width for responsiveness */
+  height: 30vh; /* Adjust height as desired */
+  margin: 0 auto; /* Center the slider horizontally */
+  position: relative;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; /* Center the controls vertically and horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.controls > div {
+  width: 30px; /* Adjust control button size */
+  height: 30px; /* Adjust control button size */
+  text-align: center;
+  line-height: 30px; /* Adjust control button size */
+  font-size: 16px; /* Adjust control button size */
+  cursor: pointer;
+}
+
+.up {
+  background: white;
+  color: #111;
+ margin-left: 50%;
+}
+
+.down {
+  background: #111;
+  color: white;
+  margin-right: 40%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px; /* Adjust padding for smaller size */
+  transition: transform 500ms ease-in-out;
+  text-align: center; /* Center content */
+}
+
+.left h2 {
+  margin-bottom: 10px;
+}
+
+.left p {
+  color: #555;
+}
+
+.right > div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease-in-out;
+}

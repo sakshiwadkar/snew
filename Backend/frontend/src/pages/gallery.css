@@ -1,0 +1,86 @@
+/* Styles for the cards and container */
+.gallery {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.gallery h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #070707;
+    font-family: 'Arial', sans-serif;
+}
+
+.gallery .card {
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in-out;
+    border: none;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery .card-title {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #007bff;
+    font-family: 'Verdana', sans-serif;
+}
+
+.card-text {
+    text-align: center;
+    color: #555;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adding hover effect to cards */
+.gallery .card:hover {
+    box-shadow: 0 9px 18px rgba(29, 25, 234, 0.3);
+    transform: scale(1.05);
+    border-top: 1.5px solid #040404;
+    border-bottom: 1.5px solid #040404;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Styling for the search input */
+.form-control {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Adding focus effect to search input */
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}

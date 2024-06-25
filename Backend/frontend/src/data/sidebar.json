@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Home",
+        "icon": "fas fa-home",
+        "childrens": [
+            {
+                "title": "Home",
+                "icon": "fas fa-home",
+                "path": "/Home"
+            }
+           
+            
+        ]
+    },
+    {
+        "title": "About Us",
+        "icon": "fas fa-info-circle",
+        "childrens": [
+            {
+                "title": "About Us",
+                "icon": "fas fa-info-circle",
+                "path": "/Aboutus"
+            }
+        ]
+    },
+    {
+        "title": "Courses",
+        "icon": "fas fa-book",
+        "childrens": [
+            {
+                "title": "Courses",
+                "icon": "fas fa-book",
+                "path": "/Courses"
+            }
+        ]
+    },
+    {
+        "title": "Gallery",
+        "icon": "fas fa-images",
+        "childrens": [
+            {
+                "title": "Gallery",
+                "icon": "fas fa-images",
+                "path": "/Gallery"
+            }
+        ]
+    },
+    {
+        "title": "Blog",
+        "icon": "fas fa-pen",
+        "childrens": [
+            {
+                "title": "Blog",
+                "icon": "fas fa-pen",
+                "path": "/Blog"
+            }
+        ]
+    },
+    {
+        "title": "Instructors",
+        "icon": "bi bi-person-badge",
+        "childrens": [
+            {
+                "title": "All Instructors",
+                "icon": "bi bi-person",
+                "path": "/instructors"
+            }
+        ]
+    },
+    {
+        "title": "Schedules",
+        "icon": "bi bi-calendar",
+        "childrens": [
+            {
+                "title": "Class Schedule",
+                "icon": "bi bi-clock",
+                "path": "/schedules"
+            }
+        ]
+    },
+    {
+        "title": "Contant Us",
+        "icon": "fas fa-envelope",
+        "childrens": [
+            {
+                "title": "Contant Us",
+                "icon": "fas fa-envelope",
+                "path": "/Contactus"
+            }
+        ]
+    }
+]

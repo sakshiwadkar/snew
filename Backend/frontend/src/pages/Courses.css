@@ -1,0 +1,72 @@
+.courses {
+  margin-left: 70px;
+}
+.courses h1{
+  text-align: center;
+}
+.custom-cardc {
+  width: 430px !important;
+  height: 310px !important;
+}
+
+.custom-cardc .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-cardc .card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+.custom-cardc .btn {
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+  color: rgb(6, 6, 6); /* Initial text color */
+  z-index: 1; /* Ensure text is above pseudo-elements */
+}
+
+.custom-cardc .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #007bff; /* Adjust color and opacity as needed */
+  transition: left 0.9s ease-in-out;
+  z-index: -1; /* Ensure pseudo-elements are behind the text */
+}
+
+.custom-cardc .btn:hover::before {
+  left: 0;
+}
+
+.custom-cardc .btn:hover {
+  color: #fff; /* Change this to the desired hover text color */
+}
+
+.card-listc {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.card-listc li {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .custom-cardc {
+      max-width: 350px;
+  }
+}

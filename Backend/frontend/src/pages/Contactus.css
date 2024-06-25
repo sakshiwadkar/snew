@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Container for the entire contact us page */
+    .contact-us-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f4f4f9;
+    }
+    
+    /* Styles for the contact info section */
+    .contact-us-page .contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    }
+    
+    /* Styles for the iframe map */
+    .contact-us-page .contact-info iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    margin-bottom: 20px;
+    }
+    
+    /* Styles for the form container */
+    .contact-us-page .form-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styles for the enquiry form */
+    .contact-us-page .enquiry-form {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    /* Styles for form groups */
+    .contact-us-page .form-group {
+    margin-bottom: 15px;
+    }
+    
+    /* Styles for form controls (inputs) */
+    .contact-us-page .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    /* Styles for the submit button */
+    .contact-us-page .btn {
+    padding: 10px 20px;
+    background-color: #1fc12a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    .contact-us-page .btn
+    {
+    background-color: #6c757d;
+    }
+    
+    .contact-us-page .btn:hover
+     {
+    background-color: #1fc12a;
+    }
+    
+    /* Styles for the error message */
+    .contact-us-page .error {
+    color: red;
+    margin-bottom: 10px;
+    }
+    
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+    .contact-us-page {
+    flex-direction: column;
+    }
+    
+    .contact-us-page  .contact-info, .form-container {
+        min-width: 100%;
+      }
+    }      

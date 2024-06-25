@@ -1,0 +1,142 @@
+
+.container,
+.container-md,
+.container-sm {
+    max-width: none !important; 
+    width: auto !important; 
+    margin-left: 10px; 
+}
+
+/* Sidebar specific styles */
+.sidebar {
+    width: 260px;
+    flex-shrink: 0; 
+    background-color: rgba(119, 117, 117, 0.185); 
+    height: 100%;
+    overflow: auto; 
+}
+
+/* Sidebar item styles */
+.sidebar-item {
+    padding: 0.75em 1em; 
+    display: block; 
+    transition: background-color 0.15s; 
+    border-radius: 5px; 
+}
+
+/* Hover effect for sidebar items */
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Sidebar title styles */
+.sidebar-title {
+    display: flex; 
+    font-size: 1.2em; 
+    justify-content: space-between; 
+    cursor: pointer; 
+}
+
+/* Icon styling within the sidebar title */
+.sidebar-title span i {
+    display: inline-block;
+    width: 1.5em; 
+}
+
+/* Sidebar content styles for collapsible sections */
+.sidebar-content {
+    padding-top: 0.25em; 
+    height: 0;
+    overflow: hidden; 
+    transition: height 0.15s ease-out; 
+}
+
+/* Open state for collapsible sections */
+.sidebar-item.open > .sidebar-content {
+    height: auto; 
+}
+
+/* Plain sidebar items (links) */
+.sidebar-item.plain {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+/* Hover effect for plain sidebar items */
+.sidebar-item.plain:hover {
+    text-decoration: underline; 
+}
+
+/* Icon styling for plain sidebar items */
+.sidebar-item.plain i {
+    display: inline-block;
+    width: 1.7em; 
+}
+.sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: rgba(119, 117, 117, 0.185);
+    height: 100%;
+    overflow: hidden; /* Changed from overflow: auto to overflow: hidden */
+    transition: width 0.3s ease-in-out; /* Add transition for width */
+}
+
+/* Style for closed sidebar */
+.sidebar.closed {
+    width: 0;
+}
+
+/* Adjust sidebar content height transitions for smooth collapsible sections */
+.sidebar-content {
+    padding-top: 0.25em;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.15s ease-out, padding 0.15s ease-out;
+}
+
+/* Open state for collapsible sections */
+.sidebar-item.open > .sidebar-content {
+    height: auto;
+    padding-top: 0.25em; /* Adjust padding to match the content */
+}
+
+/* Toggle button styles */
+.sidebar-toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 260px; /* Align with the sidebar's width */
+    background-color: rgba(119, 117, 117, 0.185);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    transition: left 0.3s ease-in-out; /* Smooth transition for button */
+}
+
+.sidebar.closed + .sidebar-toggle-btn {
+    left: 0; /* Move button to the sidebar's closed position */
+}
+
+.sidebar-toggle-btn i {
+    font-size: 1.5em;
+    transition: transform 0.3s ease-in-out; /* Smooth rotation for icon */
+}
+
+.sidebar.closed + .sidebar-toggle-btn i {
+    transform: rotate(180deg); /* Rotate icon when sidebar is closed */
+}
+
+/* Media query for small screens */
+@media all and (max-width: 767px) {
+    .sidebar {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .sidebar-item {
+        padding: 0.5em 1em; 
+    }
+    
+    .sidebar-title {
+        font-size: 1em; 
+    }
+}

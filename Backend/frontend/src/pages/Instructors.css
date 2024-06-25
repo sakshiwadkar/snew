@@ -1,0 +1,78 @@
+.containeri {
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.containeri h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+ 
+}
+
+.containeri .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containeri .col {
+  margin-bottom: 20px;
+}
+
+/* Card Container */
+.card-container {
+  perspective: 1000px;
+}
+
+/* Card Styles */
+.cardi {
+  position: relative;
+  width: 200px;
+  height:250px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border: 1.5px solid black;
+ 
+}
+
+.cardi:hover {
+  transform: rotateY(180deg);
+}
+
+.cardi-front,
+.cardi-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+ 
+}
+
+.cardi-back {
+  transform: rotateY(180deg);
+  font: 20px sans-serif;
+  margin-top: 50px;
+}
+
+.cardi .card-bodyi {
+  padding: 15px;
+}
+
+.cardi .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardi .card-titlei {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Flipped Animation */
+.flipped {
+  transform: rotateY(180deg);
+}
